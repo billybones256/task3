@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package api;
+
+service Soup {
+    rpc BuildMenu(SoupRequest) returns (SoupResponse) {}
+}
+
+message SoupRequest {
+    int32 days = 1;
+}
+
+message SoupResponse {
+    string answer = 1;
+}
