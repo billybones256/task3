@@ -1,9 +1,9 @@
 FROM golang
 
-WORKDIR /go/src/grpc
+WORKDIR /go/src/task3
 COPY cmd/server cmd/server
 COPY pkg pkg
-WORKDIR /go/src/grpc/cmd/server
+WORKDIR /go/src/task3/cmd/server
 
 RUN go get -d -v
 RUN go build
